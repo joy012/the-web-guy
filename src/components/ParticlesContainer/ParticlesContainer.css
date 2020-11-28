@@ -1,0 +1,7 @@
+.tsparticles-canvas-el{
+    position: fixed!important;
+    top:0;
+    left:0;
+    background-color: black;
+    z-index: -99999!important;
+}

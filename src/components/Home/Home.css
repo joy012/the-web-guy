@@ -1,0 +1,41 @@
+html{
+    scroll-behavior: smooth;
+}
+#home{
+    border: none!important;
+    margin-top: 6rem!important;
+}
+.zIndex{
+    z-index: 999999!important;
+}
+.primary-color{
+    color: #03b2af!important;
+}
+.my-img{
+    width: 30%!important;
+}
+a:hover{
+    text-decoration: none;
+}
+.icon{
+    background-color: #03b2af;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+}
+.icon:hover{
+    background-color:white;
+    color: black;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 767px){
+    .my-img{
+        width: 55%!important;
+    }
+}
+@media screen and (max-width: 575px){
+    .my-img{
+        width: 70%!important;
+    }
+}
