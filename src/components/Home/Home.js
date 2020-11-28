@@ -4,6 +4,7 @@ import Bounce from 'react-reveal/Bounce';
 import Typical from 'react-typical';
 import { PortfolioContext } from '../../App';
 import myImg from '../../images/profile.jpg';
+import ContactForm from '../Contact/ContactForm';
 import './Home.css';
 
 const Home = () => {
@@ -23,6 +24,16 @@ const Home = () => {
       setIsDesktop(false);
     }
   }, []);
+
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
 
   return (
     <section id="home" className="container zIndex">
@@ -75,7 +86,8 @@ const Home = () => {
           </Bounce>
 
           <Bounce right={isDesktop} bottom={isMobile} duration={2000} delay={1250}>
-            <button className="d-inline-block btn button my-4 py-2">Send Message</button>
+            <button onClick={openModal} className="d-inline-block btn button my-4 py-2">Send Message</button>
+            <ContactForm modalIsOpen={modalIsOpen} closeModal={closeModal} />
           </Bounce>
         </div>
       </Container>

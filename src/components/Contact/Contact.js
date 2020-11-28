@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import Bounce from 'react-reveal/Bounce';
 import './Contact.css';
@@ -10,7 +10,7 @@ const Contact = () => {
   const { footer } = useContext(PortfolioContext);
   const { networks } = footer;
 
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [modalIsOpen, setIsOpen] = useState(false);
   function openModal() {
     setIsOpen(true);
   }
