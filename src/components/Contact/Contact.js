@@ -23,6 +23,7 @@ const Contact = () => {
     <section id="contact" className='mt-5 pt-5'>
       <Container>
         <h1 className="display-4 text-center text-white">Get In Touch</h1>
+        <p className='text-center text-white lead px-5'>You have any Question or just want to talk? Leave a message.</p>
         <Bounce right duration={1500} delay={500}>
           <button onClick={openModal} className="d-block mx-auto btn button my-3 py-2">Send Message</button>
           <ContactForm modalIsOpen={modalIsOpen} closeModal={closeModal} />
