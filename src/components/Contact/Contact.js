@@ -28,7 +28,7 @@ const Contact = () => {
           <ContactForm modalIsOpen={modalIsOpen} closeModal={closeModal} />
         </Bounce>
         <section className="footer mt-4 mb-0 pb=0">
-          <Bounce left duration={1500} delay={1000}>
+          <Bounce left duration={1500} delay={500}>
             <div className="text-center mt-3">
               {networks &&
                 networks.map((network) => {

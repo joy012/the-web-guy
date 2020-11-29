@@ -41,7 +41,7 @@ const Project = () => {
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
-                    duration={2000}
+                    duration={1500}
                     delay={500}
                     distance="30px"
                   >
@@ -61,7 +61,7 @@ const Project = () => {
                       <Fade
                         left={isDesktop}
                         bottom={isMobile}
-                        duration={2000}
+                        duration={1500}
                         delay={500}
                         distance="30px"
                       >
@@ -77,7 +77,7 @@ const Project = () => {
                         <Fade
                           left={isDesktop}
                           bottom={isMobile}
-                          duration={2000}
+                          duration={1500}
                           delay={500}
                           distance="30px"
                         >
@@ -91,8 +91,8 @@ const Project = () => {
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
+                    duration={1500}
+                    delay={500}
                     distance="30px"
                   >
                     <div>
